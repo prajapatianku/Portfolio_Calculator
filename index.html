@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h2>Portfolio Calculator</h2>
+
+        <form id="portfolioForm">
+            <label for="investmentType">Select Investment Type:</label>
+            <select id="investmentType" required>
+                <option value="lumpSum">Lump Sum</option>
+                <option value="sip">SIP (Systematic Investment Plan)</option>
+            </select>
+
+            <label for="investmentAmount">Investment Amount:</label>
+            <input type="number" id="investmentAmount" required placeholder="Enter your investment">
+
+            <label for="annualReturn">Annual Return Rate (%):</label>
+            <input type="number" id="annualReturn" step="0.01" required placeholder="Enter return rate">
+
+            <label for="years">Number of Years:</label>
+            <input type="number" id="years" required placeholder="Enter number of years">
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="result-box">
+            <h3>Investment Results</h3>
+            <div id="result">
+                <!-- Result will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
